@@ -34,6 +34,7 @@ export async function connectAllDb() {
  *  Create configuration object for the given tenant.
  **/
 function createConnectionConfig(tenant) {
+  console.log(tenant);
   return {
     client: process.env.DB_CLIENT,
     connection: {
